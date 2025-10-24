@@ -1,0 +1,24 @@
+# Maven / Quarkus
+target/
+.quarkus/
+.quarkus-dev/
+.surefire-*/
+.failsafe-*/
+
+# IDEs
+.idea/
+.vscode/
+*.iml
+.project
+.classpath
+.settings/
+
+# SO
+.DS_Store
+Thumbs.db
+
+# Credenciales locales
+src/main/resources/application.properties
+src/main/resources/application-local.properties
+# Deja un template sin secretos:
+#   src/main/resources/application-example.properties
