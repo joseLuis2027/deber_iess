@@ -1,6 +1,6 @@
 # ejercicio-backend
 
-Este proyecto utiliza **Quarkus**, el *Framework Java supersónico y subatómico*.
+Este proyecto utiliza **Quarkus**, el *Framework Java*.
 
 Si deseas aprender más sobre Quarkus, visita su sitio web: <https://quarkus.io/>.
 
