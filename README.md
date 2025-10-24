@@ -1,80 +1,117 @@
 # ejercicio-backend
 
-This project uses Quarkus, the Supersonic Subatomic Java Framework.
+Este proyecto utiliza **Quarkus**, el *Framework Java supersónico y subatómico*.
 
-If you want to learn more about Quarkus, please visit its website: <https://quarkus.io/>.
+Si deseas aprender más sobre Quarkus, visita su sitio web: <https://quarkus.io/>.
 
-## Running the application in dev mode
+---
 
-You can run your application in dev mode that enables live coding using:
+## Ejecutar la aplicación en modo desarrollo
 
-```shell script
+Puedes ejecutar la aplicación en modo desarrollo (dev mode), lo que habilita el **live coding**, usando el siguiente comando:
+
+```bash
 ./mvnw compile quarkus:dev
 ```
 
-> **_NOTE:_**  Quarkus now ships with a Dev UI, which is available in dev mode only at <http://localhost:8080/q/dev/>.
+> **Nota:** Quarkus incluye una **interfaz Dev UI**, disponible únicamente en modo desarrollo, en:  
+> <http://localhost:8080/q/dev/>
 
-## Packaging and running the application
+---
 
-The application can be packaged using:
+## Empaquetar y ejecutar la aplicación
 
-```shell script
+La aplicación puede empaquetarse con el siguiente comando:
+
+```bash
 ./mvnw package
 ```
 
-It produces the `quarkus-run.jar` file in the `target/quarkus-app/` directory.
-Be aware that it’s not an _über-jar_ as the dependencies are copied into the `target/quarkus-app/lib/` directory.
+Esto genera el archivo `quarkus-run.jar` en el directorio `target/quarkus-app/`.  
+Ten en cuenta que **no es un über-jar**, ya que las dependencias se copian en `target/quarkus-app/lib/`.
 
-The application is now runnable using `java -jar target/quarkus-app/quarkus-run.jar`.
+La aplicación puede ejecutarse con:
 
-If you want to build an _über-jar_, execute the following command:
+```bash
+java -jar target/quarkus-app/quarkus-run.jar
+```
 
-```shell script
+Si deseas construir un **über-jar**, ejecuta:
+
+```bash
 ./mvnw package -Dquarkus.package.jar.type=uber-jar
 ```
 
-The application, packaged as an _über-jar_, is now runnable using `java -jar target/*-runner.jar`.
+La aplicación empaquetada como über-jar se ejecuta con:
 
-## Creating a native executable
+```bash
+java -jar target/*-runner.jar
+```
 
-You can create a native executable using:
+---
 
-```shell script
+## Crear un ejecutable nativo
+
+Puedes crear un ejecutable nativo con:
+
+```bash
 ./mvnw package -Dnative
 ```
 
-Or, if you don't have GraalVM installed, you can run the native executable build in a container using:
+O, si no tienes **GraalVM** instalado, puedes construirlo dentro de un contenedor usando:
 
-```shell script
+```bash
 ./mvnw package -Dnative -Dquarkus.native.container-build=true
 ```
 
-You can then execute your native executable with: `./target/ejercicio-backend-1.0.0-SNAPSHOT-runner`
+Luego, puedes ejecutar el binario nativo con:
 
-If you want to learn more about building native executables, please consult <https://quarkus.io/guides/maven-tooling>.
+```bash
+./target/ejercicio-backend-1.0.0-SNAPSHOT-runner
+```
 
-## Related Guides
+Para más información sobre cómo construir ejecutables nativos, revisa:  
+<https://quarkus.io/guides/maven-tooling>
 
-- Hibernate ORM with Panache ([guide](https://quarkus.io/guides/hibernate-orm-panache)): Simplify your persistence code for Hibernate ORM via the active record or the repository pattern
-- JDBC Driver - MySQL ([guide](https://quarkus.io/guides/datasource)): Connect to the MySQL database via JDBC
-- Hibernate Validator ([guide](https://quarkus.io/guides/validation)): Validate object properties (field, getter) and method parameters for your beans (REST, CDI, Jakarta Persistence)
-- SmallRye OpenAPI ([guide](https://quarkus.io/guides/openapi-swaggerui)): Document your REST APIs with OpenAPI - comes with Swagger UI
-- REST ([guide](https://quarkus.io/guides/rest)): A Jakarta REST implementation utilizing build time processing and Vert.x. This extension is not compatible with the quarkus-resteasy extension, or any of the extensions that depend on it.
-- Swagger UI ([guide](https://quarkus.io/guides/openapi-swaggerui)): Swagger UI
+---
 
-## Provided Code
+## Guías relacionadas
+
+- **Hibernate ORM con Panache** ([guía](https://quarkus.io/guides/hibernate-orm-panache)):  
+  Simplifica tu código de persistencia para Hibernate ORM mediante los patrones *Active Record* o *Repository*.
+  
+- **Controlador JDBC - MySQL** ([guía](https://quarkus.io/guides/datasource)):  
+  Conéctate a bases de datos MySQL mediante JDBC.
+
+- **Hibernate Validator** ([guía](https://quarkus.io/guides/validation)):  
+  Valida propiedades de objetos (campos, getters) y parámetros de métodos en tus beans (REST, CDI, Jakarta Persistence).
+
+- **SmallRye OpenAPI** ([guía](https://quarkus.io/guides/openapi-swaggerui)):  
+  Documenta tus APIs REST con OpenAPI y Swagger UI.
+
+- **REST (Jakarta REST)** ([guía](https://quarkus.io/guides/rest)):  
+  Implementación de servicios REST reactivos basada en Vert.x.  
+  *(No es compatible con `quarkus-resteasy` ni con extensiones que dependan de él).*
+
+- **Swagger UI** ([guía](https://quarkus.io/guides/openapi-swaggerui)):  
+  Interfaz gráfica para explorar y probar tus endpoints REST.
+
+---
+
+## Código incluido
 
 ### Hibernate ORM
 
-Create your first JPA entity
+Crea tu primera entidad JPA.
 
-[Related guide section...](https://quarkus.io/guides/hibernate-orm)
+[Sección relacionada...](https://quarkus.io/guides/hibernate-orm)
 
-[Related Hibernate with Panache section...](https://quarkus.io/guides/hibernate-orm-panache)
+[Sección relacionada con Hibernate Panache...](https://quarkus.io/guides/hibernate-orm-panache)
 
+---
 
 ### REST
 
-Easily start your REST Web Services
+Comienza fácilmente tus servicios web REST.
 
-[Related guide section...](https://quarkus.io/guides/getting-started-reactive#reactive-jax-rs-resources)
+[Sección relacionada...](https://quarkus.io/guides/getting-started-reactive#reactive-jax-rs-resources)
