@@ -98,20 +98,4 @@ Para más información sobre cómo construir ejecutables nativos, revisa:
 
 ---
 
-## Código incluido
 
-### Hibernate ORM
-
-Crea tu primera entidad JPA.
-
-[Sección relacionada...](https://quarkus.io/guides/hibernate-orm)
-
-[Sección relacionada con Hibernate Panache...](https://quarkus.io/guides/hibernate-orm-panache)
-
----
-
-### REST
-
-Comienza fácilmente tus servicios web REST.
-
-[Sección relacionada...](https://quarkus.io/guides/getting-started-reactive#reactive-jax-rs-resources)
